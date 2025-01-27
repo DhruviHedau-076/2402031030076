@@ -1,0 +1,64 @@
+Assignment 1
+
+1.	Prepare a word file which contains each step of this task.
+
+The steps to create the Word file for your task could look.
+
+Task Steps: DIY Sustainable Beauty Products Website.
+
+1.	Understanding the Task
+2.	Setting Up the Environment
+3.	Writing the HTML Code
+4.	Writing the CSS Code
+5.	Testing the Website
+6.	Organizing the Project Files
+7.	Additional Notes
+8.	Conclusion
+
+Understanding the Task:
+•	The goal is to develop a website using HTML and CSS to display tutorials for creating eco-friendly and natural beauty products at home.
+•	The website will include a homepage with sections for About, Tutorials, and Contact.
+Setting Up the Environment:
+•	Install a code editor (e.g., Visual Studio Code, Sublime Text, or Notepad++) if not already installed.
+•	Create a project folder named DIY_Sustainable_Beauty.
+Inside the folder, create two files:
+•	index.html (for website's structure)
+•	styles.css (for website's design).
+
+Writing the HTML Code:
+•	Open the index.html file in the code editor.
+•	Write the HTML structure for the website.
+Structure includes.,
+o	A header with a title and a brief description.
+o	A navigation bar with links to the About, Tutorials, and Contact sections.
+o	An "About" section introducing the purpose of the website.
+o	A "Tutorials" section showcasing different DIY beauty product tutorials.
+o	A footer with contact information.
+•	Save the file.
+
+Writing the CSS Code:
+•	Open the styles.css file in the code editor.
+•	Write the CSS code to style the website.
+Design includes.,
+o	A modern and clean layout with vibrant colors.
+o	Styling for the header, navigation bar, sections, and footer.
+•	Save the file.
+
+Testing the Website:
+•	Open the index.html file in a web browser to view the website.
+•	Check that all sections (About, Tutorials, and Contact) are displayed correctly and styled as expected.
+•	Ensure all navigation links work properly.
+Organizing the Project Files:
+•	Ensure the project folder contains the following files:
+o	index.html (HTML file for website structure)
+o	styles.css (CSS file for website design)
+•	Or you can use both html and css in one file by using Inline CSS.
+
+Additional Notes:
+•	Ensure the website is responsive and looks good on various screen sizes.
+•	Use comments in the code to explain key sections for better understanding.
+
+Conclusion:
+The website for "DIY Sustainable Beauty Products" is ready with a clean design and functional structure.
+The tutorials are presented in an easy-to-follow format, encouraging sustainability and natural beauty care.
+
