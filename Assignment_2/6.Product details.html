@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Matte Lipstick - NYX</title>
+    <!-- <link rel="stylesheet" href="style6.css"> -->
+     <style>
+     
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('image/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 100px; 
+    height: auto;
+    }
+
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 100px; 
+    height: auto;
+}
+
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-icon {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.settings {
+    font-size: 1.2rem;
+}
+
+
+.product-details {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+
+.product-image {
+    position: relative;
+    width: 400px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.image-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+
+.product-info {
+    flex: 1;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+
+.price {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 1rem;
+}
+
+.discount {
+    color: green;
+    font-size: 1rem;
+}
+
+
+.ratings {
+    font-size: 1rem;
+    color: orange;
+}
+
+
+.volume {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.details-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+.shade-title {
+    font-size: 1rem;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.shades {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.shade {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.shade.active {
+    border: 3px solid black;
+}
+
+
+.description {
+    font-size: 1rem;
+    margin-top: 15px;
+    color: #151010;
+    padding: 5px;
+    font-weight: normal,bold;
+}
+
+
+.purchase-options {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.small-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart-btn {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.buy-now {
+    background: #007b8f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.buy-now:hover {
+    opacity: 0.8;
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+     
+        <header>
+            <img class="logo-img" img src="image/logo.jpg" alt="Logo"/>
+            <nav class="navbar">
+                <a href="#" class="nav-icon">🏠 Home</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">❤️ Wishlist</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">🎁 Offers</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">🛒 Cart</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">👤 Account</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon settings">⚙️</a>
+                <a href="#" class="nav-icon settings">🔔</a>
+                <a href="#" class="nav-icon settings">🔍</a>
+            </nav>
+        </header>
+
+        
+        <div class="product-details">
+           
+            <div class="product-image">
+                <img src="image/lipstick.jpg" alt="Velvet Matte Lipstick">
+            </div>
+
+            
+            <div class="product-info">
+                <h2>Velvet Matte Lipstick</h2>
+                <p class="price">
+                    <span class="current-price">$28.00</span>
+                    <span class="old-price">$46.00</span>
+                    <span class="discount">-40%</span>
+                </p>
+                <p class="tax-included">Inclusive of all taxes</p>
+                
+            
+                <p class="ratings">⭐ ⭐ ⭐ ⭐ ☆ <span>4.5/5 (2,346)</span></p>
+
+              
+                <p class="volume">300ml - $0.3 per ml <a href="#" class="details-link">View all details →</a></p>
+
+                <div class="purchase-options">
+                    <p class="small-price">$28.00 <span class="old-price">$46.00</span></p>
+                    <button class="cart-btn">💙</button>
+                    <button class="buy-now">Buy now →</button>
+                </div>
+
+             
+                <p class="shade-title">All Shades</p>
+                <div class="shades">
+                    <div class="shade active" style="background: #A05262;"></div>
+                    <div class="shade" style="background: #923B50;"></div>
+                    <div class="shade" style="background: #6E2020;"></div>
+                    <div class="shade" style="background: #5A1616;"></div>
+                    <div class="shade" style="background: #E41D77;"></div>
+                </div>
+
+               
+                <p><!--class="description" -->
+                    Richly pigmented and crafted for lasting wear, this luxurious lipstick delivers intense color payoff with just one swipe. 
+                    Its velvety matte finish glides smoothly across the lips, offering a soft, 
+                    non-drying texture that stays comfortable throughout the day. Perfect for creating bold,statement lips, it resist smudging and fading, ensuring your 
+                    look remains flawless from morning to night. whether you're heading to a special event or just 
+                    want to elevate your everyday makeup, this lipstick offers vibrant color that turns heads and makes 
+                    a lasting impression.
+                </p> 
+        </div>
+    </div>
+</body>
+</html>
