@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty E-commerce Splash Screen</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Aguafina Script+Display:italic,wght@1,600&family=Aguafina Script:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('image/background.jpg') no-repeat center center/cover;
+}
+
+/* Splash screen container */
+.splash-container {
+    text-align: center;
+    color: black;
+    background: rgba(255, 255, 255, 0.1); /* Subtle overlay effect */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 100px; 
+    height: auto;
+}
+
+/* Tagline Styling */
+.tagline {
+    font-family: 'Playfair Display', serif, 'Aguafina Script';
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.tagline span {
+    color: #DA5243; 
+    font-family: 'Playfair Display', serif, 'Aguafina Script';
+}
+
+/* Sub-tagline */
+.subtagline {
+    font-family: 'Playfair Display', serif, 'Aguafina Script';
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Button container */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Button styling */
+.btn {
+    width: 800px;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn.outline {
+    border: 2px solid #DA5243;
+    background: transparent;
+    color: #DA5243;
+}
+
+.btn.outline:hover {
+    background: #DA5243;
+    color: white;
+}
+
+.btn.solid {
+    background: #DA5243;
+    color: white;
+    border: none;
+}
+
+.btn.solid:hover {
+    opacity: 0.8;
+}
+
+/* Terms & Conditions */
+.terms {
+    margin-top: 15px;
+    font-size:1.1rem;
+    color: rgb(104, 103, 103);
+    font-family: 'Playfair Display', serif, 'Aguafina Script';
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+</style>
+</head>
+<body>
+    <div class="splash-container">
+        <div class="content">
+            <img class="logo" img src="image/logo.jpg" alt="Logo"/>
+            <h2 class="tagline"><span>Radiate</span> Confidence</h2>
+            <h3 class="subtagline">Your Beauty, Your Way</h3>
+            
+            <div class="buttons">
+                <button class="btn outline">Create an account</button>
+                <button class="btn solid">Existing user</button>
+            </div>
+            
+            <p class="terms">T&C Apply*</p>
+        </div>
+    </div>
+</body>
+</html>
