@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - NYX</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url('image/background.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+       
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            padding: 20px;
+        }
+
+      
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 100px; 
+    height: auto;
+    }
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+        position: absolute;
+        top: 10px;  
+        left: 10px;
+        width: 100px; 
+        height: auto;
+}
+
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-icon {
+            text-decoration: none;
+            color: black;
+            font-size: 0.9rem;
+        }
+
+        .settings {
+    font-size: 1.2rem;
+}
+
+   
+        .checkout-title {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+
+        
+        .checkout-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .checkout-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .edit-btn {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .checkout-content {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+      
+        .items-section {
+            flex: 2;
+        }
+
+        .cart-items {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cart-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .item-details {
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+       
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+       
+        .shipping-options {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .shipping-options label {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+
+      
+        .payment-options {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .payment-methods img {
+            width: 50px;
+        }
+
+     
+        .checkout-summary {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .checkout-btn {
+            background: #007b8f;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .checkout-btn:hover {
+            opacity: 0.8;
+        }
+
+  
+        @media (max-width: 768px) {
+            .checkout-content {
+                flex-direction: column;
+            }
+
+            .cart-items {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo-img" img src="image/logo.jpg" alt="Logo"/>
+            <nav class="navbar">
+                <a href="#" class="nav-icon">🏠 Home</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">❤️ Wishlist</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">🎁 Offers</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">🛒 Cart</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">👤 Account</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon settings">⚙️</a>
+                <a href="#" class="nav-icon settings">🔔</a>
+                <a href="#" class="nav-icon settings">🔍</a>
+            </nav>
+        </header>
+
+        <h2 class="checkout-title">← Checkout <span>2 items</span></h2>
+
+        <div class="checkout-info">
+            <div class="checkout-box">
+                <p><strong>Shipping Address</strong></p>
+                <p>N 1204, Parishkaar 2 Near Khokra Circle, Maninagar(E), Ahmedabad, Gujarat - 380008</p>
+                <button class="edit-btn">✏️</button>
+            </div>
+            <div class="checkout-box">
+                <p><strong>Contact Information</strong></p>
+                <p>+91-9320000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Email:</b>amandamorgan@example.com</p>
+                <button class="edit-btn">✏️</button>
+            </div>
+        </div>
+
+        <div class="checkout-content">
+            <div class="items-section">
+                <h3>Items <span>2</span> <a href="#" class="voucher-link">➕ Add Voucher</a></h3>
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img src="image/lipstick.jpg" alt="Velvet Matte Lipstick">
+                        <div class="item-details">
+                            <h4>Velvet Matte Lipstick</h4>
+                            <p>300ml - $0.3 per ml</p>
+                            <p>Quantity: <select><option>1</option><option>2</option><option>3</option></select></p>
+                            <p class="availability">📦 Only 32 items left</p>
+                            <p class="delivery-date">🚚 Deliver by Mon, 9 Sep</p>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="image/hydra boost serum.jpeg" alt="Hydra Boost Serum">
+                        <div class="item-details">
+                            <h4>Hydra Boost Serum</h4>
+                            <p>300ml - $0.3 per ml</p>
+                            <p>Quantity: <select><option>1</option><option>2</option></select></p>
+                            <p class="availability">📦 Only 12 items left</p>
+                            <p class="delivery-date">🚚 Deliver by Thu, 12 Sep</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="shipping-options">
+                    <h3>Shipping Options</h3>
+                    <label><input type="radio" checked> Standard (5-7 days) - FREE</label>
+                    <label><input type="radio"> Express (1-2 days) - $8.00</label>
+                </div>
+
+                <div class="payment-options">
+                    <h3>Payment option</h3>
+                    <div class="payment-methods">
+                        <img src="image/visa.jpeg" alt="Visa">
+                        <br>
+                        <img src="image/mastercard.jpeg" alt="MasterCard">
+                        <br>
+                        <img src="image/GPay.jpeg" alt="Google Pay">
+                        <br>
+                        <img src="image/Apple Pay.jpeg" alt="Apple Pay">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-summary">
+            <p><strong>Grand Total:</strong> <span class="total-price">$40.00</span></p>
+            <button class="checkout-btn">Proceed to Pay →</button>
+        </div>
+    </div>
+</body>
+</html>
