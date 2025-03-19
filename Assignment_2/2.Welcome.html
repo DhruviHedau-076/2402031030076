@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYX Login Page</title>
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+     <style>
+@import url('https://fonts.googleapis.com/css2?family=Aguafina Script+Display:italic,wght@1,600&family=Aguafina Script:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('image/background.jpg') no-repeat center center/cover;
+}
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); 
+    
+    background: url('image/background.jpg') no-repeat center center/cover;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    width: 10000px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 100px; 
+    height: auto;
+}
+
+
+.login-text {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.subtext {
+    color: #DA5243;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+label {
+    font-weight: normal;
+    display: block;
+    margin: 10px 0 5px;
+    text-align-last: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.input-box {
+    display: flex;
+    gap: 0px;
+    width: 800px;
+}
+
+.country-code {
+    width: 30%;
+}
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    align-items:first baseline;
+}
+
+.forgot-password {
+    color: #007b8f;
+    text-decoration: none;
+    text-align-last: right;
+    font-size: 1.1rem;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.primary {
+    background: #007b8f;
+    color: white;
+    border: none;
+}
+
+.primary:hover {
+    opacity: 0.8;
+}
+
+.google {
+    background: white;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.apple {
+    background: black;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.signup-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.signup-text a {
+    color: #007b8f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+     </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img class="logo" img src="image/logo.jpg" alt="Logo"/>
+            <p class="login-text">Log in to your account</p>
+            <p class="subtext">Welcome back! Please enter your details.</p>
+            
+            <form>
+                
+                <label for="phone">Phone number</label>
+                <div class="input-box">
+                    <select class="country-code">
+                        <option>IND</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                    </select>
+                    <input type="text" id="phone" placeholder="+91 93569 27829">
+                </div>
+
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="********">
+
+                <div class="options">
+                    <label ><input type="checkbox"> Remember for 30 days</label>
+                    <a href="#" class="forgot-password" style="margin-left: 10px;">Forgot&nbsp;password?</a>
+                </div>
+
+               
+                <button class="btn primary">Sign in now →</button>
+                <button class="btn google"><img src="google-icon.png" alt=""> Sign in with Google</button>
+                <button class="btn apple"><img src="apple-icon.png" alt=""> Sign in with Apple</button>
+            </form>
+
+            <p class="signup-text">Don’t have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
