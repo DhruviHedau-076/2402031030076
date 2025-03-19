@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYX Flash Sale</title>
+    <!-- <link rel="stylesheet" href="style5.css"> -->
+     <style>
+       
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('image/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 100px; 
+    height: auto;
+    }
+
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 100px; 
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    font-weight: normal;
+}
+
+.nav-icon {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.settings {
+    font-size: 1.2rem;
+}
+
+.flash-sale {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    
+}
+
+.back-arrow {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.discount-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color:  rgba(109, 111, 112, 0.943);
+}
+
+
+.discount-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.discount-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: #f1f1f1;
+    font-size: 1rem;
+}
+
+.discount-btn.active {
+    background: #007b8f;
+    color: white;
+}
+
+
+.category-title {
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+
+.category-images {
+    display: flex;
+    gap: none;
+    overflow-x: auto;
+}
+
+.category-images img {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 0px;
+}
+
+
+.discount-section-title {
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.discount-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+h4 {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #007b8f;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+            <header>
+                <img class="logo-img" img src="image/logo.jpg" alt="Logo"/>
+                <nav class="navbar">
+                    <a href="#" class="nav-icon">🏠 Home</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="nav-icon">❤️ Wishlist</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="nav-icon">🎁 Offers</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="nav-icon">🛒 Cart</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="nav-icon">👤 Account</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="nav-icon settings">⚙️</a>
+                    <a href="#" class="nav-icon settings">🔔</a>
+                    <a href="#" class="nav-icon settings">🔍</a>
+                </nav>
+            </header>
+            
+        
+        <div class="flash-sale">
+            <a href="#" class="back-arrow">←</a>
+            <h2>Flash Sale</h2>
+            <p class="discount-title">Choose Your Discount</p>
+
+           
+            <div class="discount-bar">
+                <button class="discount-btn active">All</button>
+                <button class="discount-btn">10%</button>
+                <button class="discount-btn">20%</button>
+                <button class="discount-btn">30%</button>
+                <button class="discount-btn">40%</button>
+                <button class="discount-btn">50%</button>
+            </div>
+        </div>
+
+        
+        <h3 class="category-title">Radiant Glow</h3>
+        <div class="category-images">
+            <img src="image/1.jpeg" alt="">
+            <img src="image/2.jpeg" alt="">
+            <img src="image/3.jpeg" alt="">
+            <img src="image/4.jpeg" alt="">
+            <img src="image/1.jpeg" alt="">
+            <img src="image/2.jpeg" alt="">
+            <img src="image/3.jpeg" alt="">
+        </div>
+
+        
+        <h3 class="discount-section-title">20% Discount</h3>
+        <div class="products">
+            <div class="product-card">
+                <img src="image/lipstick.jpg" alt="">
+                <span class="discount-tag">40%</span>
+                <h4>Velvet Matte Lipstick</h4>
+                <p class="price">$28.00 <span class="old-price">$46.00</span></p>
+            </div>
+
+            <div class="product-card">
+                <img src="image/hydra boost serum.jpeg" alt="">
+                <span class="discount-tag">50%</span>
+                <h4>Hydra Boost Serum</h4>
+                <p class="price">$12.00 <span class="old-price">$24.00</span></p>
+            </div>
+
+            <div class="product-card">
+                <img src="image/silk compact powder.jpeg" alt="">
+                <span class="discount-tag">50%</span>
+                <h4>Silk Compact Powder</h4>
+                <p class="price">$12.00 <span class="old-price">$24.00</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
