@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - NYX</title>
+    <!-- <link rel="stylesheet" href="style12.css"> -->
+     <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('image/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 90px; 
+    height: auto;
+    }
+
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 100px; 
+    height: auto;
+}
+
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-icon {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+
+.notifications-header {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.new-count {
+    color: blue;
+    font-size: 1rem;
+}
+
+
+.notifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.notification {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+}
+
+.notification:hover {
+    background: url('image/background.jpg') no-repeat center center/cover;;
+}
+
+.notif-icon {
+    font-size: 1.5rem;
+}
+
+.notif-content {
+    flex: 1;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.9rem;
+    color: rgb(2, 2, 2);
+}
+
+.notif-arrow {
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+.unread h4 {
+    font-weight: bold;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: green;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .notifications-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo-img" img src="image/logo.jpg" alt="Logo"/>
+            <nav class="navbar">
+                <a href="#" class="nav-icon">🏠 Home</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">❤️ Wishlist</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">🎁 Offers</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">🛒 Cart</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">👤 Account</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon settings">⚙️</a>
+                <a href="#" class="nav-icon settings">🔔</a>
+                <a href="#" class="nav-icon settings">🔍</a>
+            </nav>
+        </header>
+        
+        <div class="notifications-header">
+            <h2>← Notifications <span class="new-count">4 new</span></h2>
+        </div>
+
+        
+        <div class="notifications-grid">
+            <div class="notification unread">
+                <span class="notif-icon">🔔</span>
+                <div class="notif-content">
+                    <h4>New Product Alerts <span class="dot"></span></h4>
+                    <p>Discover the latest arrivals in beauty. Don’t miss out on the newest trends and must-have products.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification unread">
+                <span class="notif-icon">🎁</span>
+                <div class="notif-content">
+                    <h4>Exclusive Offers <span class="dot"></span></h4>
+                    <p>You’ve unlocked a special offer! Tap to reveal your discount.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification unread">
+                <span class="notif-icon">📦</span>
+                <div class="notif-content">
+                    <h4>Order Updates <span class="dot"></span></h4>
+                    <p>Your order has been shipped! Track your delivery and stay updated on its progress.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification unread">
+                <span class="notif-icon">🔔</span>
+                <div class="notif-content">
+                    <h4>Restock Notifications <span class="dot"></span></h4>
+                    <p>Good news! The product you loved is back in stock. Grab it before it’s gone again.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification">
+                <span class="notif-icon">🛍</span>
+                <div class="notif-content">
+                    <h4>Cart Reminders</h4>
+                    <p>You’ve left something behind! Complete your purchase now and enjoy a seamless checkout experience.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification">
+                <span class="notif-icon">✨</span>
+                <div class="notif-content">
+                    <h4>Personalized Recommendations</h4>
+                    <p>Based on your recent searches, we’ve found products you’ll love. Check them out!</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification">
+                <span class="notif-icon">📉</span>
+                <div class="notif-content">
+                    <h4>Price Drop Alerts</h4>
+                    <p>Prices have dropped on your favorite products! Shop now and save big.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification">
+                <span class="notif-icon">🏆</span>
+                <div class="notif-content">
+                    <h4>Loyalty Rewards</h4>
+                    <p>You’ve earned rewards! Redeem your points for exclusive discounts.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification">
+                <span class="notif-icon">⭐</span>
+                <div class="notif-content">
+                    <h4>Review Reminders</h4>
+                    <p>How did you like your recent purchase? Share your thoughts and help others make informed decisions.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification unread">
+                <span class="notif-icon">🔔</span>
+                <div class="notif-content">
+                    <h4>Restock Notifications <span class="dot"></span></h4>
+                    <p>Good news! The product you loved is back in stock. Grab it before it’s gone again.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification">
+                <span class="notif-icon">🛍</span>
+                <div class="notif-content">
+                    <h4>Cart Reminders</h4>
+                    <p>You’ve left something behind! Complete your purchase now and enjoy a seamless checkout experience.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification">
+                <span class="notif-icon">✨</span>
+                <div class="notif-content">
+                    <h4>Personalized Recommendations</h4>
+                    <p>Based on your recent searches, we’ve found products you’ll love. Check them out!</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification">
+                <span class="notif-icon">📉</span>
+                <div class="notif-content">
+                    <h4>Price Drop Alerts</h4>
+                    <p>Prices have dropped on your favorite products! Shop now and save big.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification">
+                <span class="notif-icon">🏆</span>
+                <div class="notif-content">
+                    <h4>Loyalty Rewards</h4>
+                    <p>You’ve earned rewards! Redeem your points for exclusive discounts.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+
+            <div class="notification">
+                <span class="notif-icon">⭐</span>
+                <div class="notif-content">
+                    <h4>Review Reminders</h4>
+                    <p>How did you like your recent purchase? Share your thoughts and help others make informed decisions.</p>
+                </div>
+                <span class="notif-arrow">→</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
