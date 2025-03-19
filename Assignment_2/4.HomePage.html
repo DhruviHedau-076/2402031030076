@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYX Homepage</title>
+    <!-- <link rel="stylesheet" href="style4.css"> -->
+     <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('image/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo-img {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 100px; 
+    height: auto;
+    }
+
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    font-weight: normal;
+}
+
+.nav-icon {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.settings {
+    font-size: 1.2rem;
+}
+
+
+.welcome-text {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+
+.announcement {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.announcement span {
+    color: red;
+    font-weight: bold;
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.section-title {
+    font-size: 1.4rem;
+    margin: 15px 0;
+}
+
+.stories {
+    display: flex;
+    gap: 10px;
+}
+
+.story {
+    width: 100px;
+    height: 140px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.story img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.story span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+
+.recently-viewed {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.recently-viewed img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.orders {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.order-btn {
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.order-btn:hover {
+    opacity: 0.8;
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo-img" img src="image/logo.jpg" alt="Logo"/>
+            <nav class="navbar">
+                <a href="#" class="nav-icon">🏠 Home</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">❤️ Wishlist</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">🎁 Offers</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">🛒 Cart</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">👤 Account</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon settings">⚙️</a>
+                <a href="#" class="nav-icon settings">🔔</a>
+                <a href="#" class="nav-icon settings">🔍</a>
+            </nav>
+        </header>
+
+        <h2 class="welcome-text">Hello, Romina!</h2>
+
+        
+        <div class="announcement">
+            <p><span>Announcement</span><br> Grab your limited-time deal now. Flat 50% off on all products!</p>
+            <button class="arrow-btn">➡</button>
+        </div>
+
+      
+        <h3 class="section-title">Stories</h3>
+        <div class="stories">
+            <div class="story"><img src="image/1.jpeg" alt=""><span>▶</span></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="story"><img src="image/2.jpeg" alt=""><span>▶</span></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="story"><img src="image/3.jpeg" alt=""><span>▶</span></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="story"><img src="image/4.jpeg" alt=""></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="story"><img src="image/5.jpeg" alt=""><span>▶</span></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        
+        <h3 class="section-title">Recently Viewed</h3>
+        <div class="recently-viewed">
+            <img src="image/hydra boost serum.jpeg" alt="">
+            <img src="image/lipstick.jpg" alt="">
+            <img src="image/silk compact powder.jpeg" alt="">
+            <img src="image/hydra boost serum.jpeg" alt="">
+        </div>
+
+      
+        <h3 class="section-title">My Orders</h3>
+        <div class="orders">
+            <button class="order-btn">To Pay</button>
+            <button class="order-btn">To Receive</button>
+            <button class="order-btn">To Review</button>
+        </div>
+    </div>
+</body>
+</html>
