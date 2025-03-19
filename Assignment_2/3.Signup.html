@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYX - Create Account</title>
+    <style>
+        body {
+            background: url('image/background.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 400px;
+        }
+        
+        h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+
+        .logo-img {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 10px;  
+        left: 10px;
+        width: 100px; 
+        height: auto;
+        }
+
+        .subtitle {
+            color:rgb(104, 103, 103);
+            font-size: 1rem;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding: 8px;
+        }
+        label {
+            font-weight: normal;
+            margin-top: 10px;
+        }
+        input {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 800px;
+        }
+        .password-hint {
+            color: rgb(117, 44, 141);
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .create-account {
+            background-color: #007b8f;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .google-btn, .apple-btn {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .google-btn {
+            background: white;
+            border: 1px solid #ccc;
+        }
+        .apple-btn {
+            background: black;
+            color: white;
+        }
+        .signin-text {
+            margin-top: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <div class="form-box">
+            <div class="login-box">
+                <img class="logo-img" img src="image/logo.jpg" alt="Logo"/>
+            <h2>Create an account</h2>
+            <p class="subtitle">Please enter your details to start your journey</p>
+            <form>
+                <label for="name">Name*</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="mobile">Mobile*</label>
+                <input type="tel" id="mobile" placeholder="Enter your number" required>
+
+                <label for="password">Password*</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+                <p class="password-hint">Must be at least 8 characters.</p>
+
+                <p class="signin-text">Already have an account? <a href="#">Sign in</a></p>
+
+                
+            </form>
+            
+            <div class="social-buttons">
+                <button class="create-account">Create account →</button>
+                <button class="google-btn">Sign up with Google</button>
+                <button class="apple-btn">&#xf179; Mac OS</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
