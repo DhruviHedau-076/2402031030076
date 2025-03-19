@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - NYX</title>
+    <!-- <link rel="stylesheet" href="style9.css"> -->
+     <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('image/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 90px; 
+    height: auto;
+    }
+
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    width: 100px; 
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    font-weight: normal;
+}
+
+.nav-icon {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+
+.confirmation-title {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+
+.confirmation-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.success-icon {
+    background: #007b8f;
+    color: white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+}
+
+.transaction-id {
+    font-size: 1rem;
+    color: rgb(103, 100, 100);
+    margin-bottom: 15px;
+}
+
+
+.transaction-details {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 1rem;
+}
+
+.total-row {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.payment-method {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-method img {
+    width: 80px;
+}
+
+.payment-method p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.email {
+    font-size: 0.9rem;
+    color: rgb(103, 100, 100);
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo-img" img src="image/logo.jpg" alt="Logo"/>
+            <nav class="navbar">
+                <a href="#" class="nav-icon">🏠 Home</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">❤️ Wishlist</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">🎁 Offers</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">🛒 Cart</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon">👤 Account</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-icon settings">⚙️</a>
+                <a href="#" class="nav-icon settings">🔔</a>
+                <a href="#" class="nav-icon settings">🔍</a>
+            </nav>
+        </header>
+
+      
+        <div class="confirmation-title">
+            <h2>Confirmation</h2>
+        </div>
+
+      
+        <div class="confirmation-box">
+            <div class="success-icon">✔</div>
+            <h2>Thank you!</h2>
+            <p>Your transaction was successful</p>
+            <p class="transaction-id">#ID-22465476578390-3789</p>
+
+        
+            <div class="transaction-details">
+                <div class="detail-row">
+                    <span>Date</span> <span>01/24/2025</span>
+                </div>
+                <div class="detail-row">
+                    <span>Time</span> <span>10:15 AM</span>
+                </div>
+                <div class="detail-row">
+                    <span>To</span> <span>Amanda</span>
+                </div>
+                <div class="detail-row total-row">
+                    <span>Total</span> <span>$50.97</span>
+                </div>
+            </div>
+
+           
+            <div class="payment-method">
+                <img src="image/GPay.jpeg" alt="Google Pay">
+                <p>Google Pay</p>
+                <p class="email">amanda@okaxis</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
